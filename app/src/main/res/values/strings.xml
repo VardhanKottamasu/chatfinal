@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">chatfinal</string>
+    <string name="tab_text_1">Chats</string>
+    <string name="tab_text_2">Groups</string>
+    <string name="tab_text_3">Nearby</string>
+    <string name="tab_text_4">Active</string>
+</resources>

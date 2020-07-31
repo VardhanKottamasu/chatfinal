@@ -1,0 +1,55 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/footer_section">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/footer_section"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:minHeight="48dp">
+
+        <ImageView
+            android:id="@+id/camera_button"
+            android:layout_height="match_parent"
+            android:layout_width="36dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:src="@drawable/ic_camera" />
+        <ImageView
+            android:id="@+id/add_button"
+            android:layout_height="match_parent"
+            android:layout_width="36dp"
+            android:src="@drawable/ic_add" />
+
+        <EditText
+            android:id="@+id/message_text"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:hint="Enter a message"
+            android:layout_weight="1"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:inputType="textMultiLine"
+            android:minLines="1"
+            android:maxLines="4"/>
+
+        <ImageView
+            android:id="@+id/send_button"
+            android:layout_height="match_parent"
+            android:layout_width="36dp"
+            android:src="@drawable/ic_send"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+</RelativeLayout>
